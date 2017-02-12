@@ -1,11 +1,11 @@
 /*
  * @Author: Administrator
  * @Date:   2017-02-01 10:58:23
- * @Last Modified by:   Administrator
- * @Last Modified time: 2017-02-09 17:49:22
+ * @Last Modified by:   Lee
+ * @Last Modified time: 2017-02-12 12:26:49
  */
 
-
+'use strict';
 // 顶端下拉
 // 可以尝试用一下事件代理
 (function(){
@@ -56,7 +56,7 @@ function addDot(i) {
     $(dots[i]).siblings('li').removeClass('whiteDot');
 }
 // 自动轮播
-j = 0;
+var j = 0;
 
 function inter() {
     j = $('.current')[0].dataset.num;
@@ -91,9 +91,9 @@ $('.spanLeft')[0].onclick = function() {
     }
     var num1 = $('.current')[0].dataset.num;
     if (num1 > 1 && num1 <= Carousels.length) {
-        num2 = num1 - 2;
+        var num2 = num1 - 2;
     } else {
-        num2 = Carousels.length - 1;
+        var num2 = Carousels.length - 1;
     }
     changeItem(num2);
     addDot(num2);
@@ -109,9 +109,9 @@ $('.spanRight')[0].onclick = function() {
     console.log($('.current')[0].dataset.num);
     var num3 = $('.current')[0].dataset.num;
     if (num3 >= 1 && num3 <= Carousels.length-1) {
-        num4 = num3;
+      var num4 = num3;
     } else {
-        num4 = 0;
+       var num4 = 0;
     }
     changeItem(num4);
     addDot(num4);
