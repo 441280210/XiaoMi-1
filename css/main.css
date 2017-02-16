@@ -1,8 +1,8 @@
 /*
 * @Author: Administrator
 * @Date:   2017-01-28 18:26:28
-* @Last Modified by:   Administrator
-* @Last Modified time: 2017-02-12 01:32:29
+* @Last Modified by:   Lee
+* @Last Modified time: 2017-02-16 14:32:30
 */
 
 
@@ -21,8 +21,9 @@
 }
 
 body{
-	min-width: 1226px;
+	min-width: 1230px;
 	max-width: 1920px;
+	margin: 0 auto;
 }
 /*纸张效果*/
 .paper{
@@ -544,7 +545,7 @@ span.spanRight{
 	color: rgba(255,255,255,1);
 }
 .subContainer .subItem:not(:first-child){
-	margin-left: 10px;
+	margin-left: 9px;
 }
 .subContainer .subItem img{
 	display: inline-block;
@@ -640,7 +641,7 @@ span.spanRight{
 	width: 992px;
 	height: 614px;
 	display: inline-block;
-	margin-left: -4px;
+	margin-left: -5px;
 }
 /*搭配*/
 .matchContainer {
